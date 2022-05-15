@@ -54,9 +54,9 @@
                         <div class="title">
                             <h3>Digital Expert Group</h3>
                             <p>Lorem ipsum dolor sit amet consectetur alias reprehenderit quos ex? Modi possimus quod iusto laudantium incidunt!</p>
-                            <div class="row">
-                                <button>Qui sommes-nous ?</button>
-                                <button>Contactez-nous</button>
+                            <div class="">
+                                <button class="mb-3">Qui sommes-nous ?</button>
+                                <button class="mb-3">Contactez-nous</button>
                             </div>
                         </div>
                         <div class="social">
@@ -81,7 +81,7 @@
                 <div class="row">
                     <div class="col-lg-5">
                         <div class="about-img">
-                            <img class="w-100" src="assets/images/about.jpg" alt="" >
+                            <img class="w-100" src="assets/images/about.webp" alt="" >
                         </div>
                     </div>
                     <div class="col-lg-7">
@@ -106,7 +106,8 @@
                         <div class="box active text-center">
                             <div class="content-box">
                                <div class="icon-box">
-                               <img src="assets/images/code.gif" alt="">
+                               
+                                    <iframe src="https://embed.lottiefiles.com/animation/90896"></iframe>
                                </div> 
                                <div class="text-box">
                                    <span>Marketing Digital</span>
@@ -121,7 +122,7 @@
                         <div class="box text-center">
                             <div class="content-box">
                                <div class="icon-box">
-                                    <img src="assets/images/code.gif" alt="">
+                               <iframe src="https://embed.lottiefiles.com/animation/67017"></iframe>
                                </div> 
                                <div class="text-box">
                                    <span>Developpement Web et Mobile</span>
@@ -136,7 +137,7 @@
                         <div class="box text-center">
                             <div class="content-box">
                                <div class="icon-box">
-                               <img src="assets/images/code.gif" alt="">
+                                    <iframe src="https://embed.lottiefiles.com/animation/68050"></iframe>
                                </div> 
                                <div class="text-box">
                                    <span>Formation Bureautique</span>
@@ -151,8 +152,9 @@
             </div>
         </section>
 
-        <section>
+        <section class="tutorial">
             <div class="container">
+            <h3 class="title">Tutorials</h3>
                 <div class="row">
                     <div class="col-lg-4">
                         <div class="card mb-3" style="max-width: 540px;">
@@ -209,10 +211,11 @@
 
         <section class="testimonial">
             <div class="container">
+            <h3 class="title">Temoignages</h3>
                 <div class="row">
                     <div class="col-lg-5">
                         <!-- <video class="w-100" src="assets/video/vid_1.mp4"></video> -->
-                        <img class="w-100" src="assets/img/carousel/carousel_1_1.jpg" alt="">
+                        <img class="w-100" src="assets/images/testimonial.jpg" alt="">
                     </div>
                     <div class="col-lg-7">
                         <div class="box-carousel">
@@ -250,22 +253,11 @@
                         <div class="section-detail">
                             <div class="d-flex">
                                 <div class="icons d-flex justify-content-center align-items-center">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                </div>
-                                <div class="detail-infos">
-                                    <h3>Localisation</h3>
-                                    <p>Côte D'Ivoire, Cocody Riviera Palmeraie, Programme 4 en face du supermarché CDCI</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="section-detail">
-                            <div class="d-flex">
-                                <div class="icons d-flex justify-content-center align-items-center">
                                     <i class="fas fa-phone-alt"></i>
                                 </div>
                                 <div class="detail-infos">
                                     <h3>Téléphone</h3>
-                                    <p>(+225) 05 74 27 12 27 / 01 42 19 23 18</p>
+                                    <p>(+225) 01 01 01 01 01 / 02 02 02 02 02</p>
                                 </div>
                             </div>
                         </div>
@@ -276,7 +268,18 @@
                                 </div>
                                 <div class="detail-infos">
                                     <h3>Email</h3>
-                                    <p>fpseduc@gmail.com</p>
+                                    <p>adressegmail@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section-detail">
+                            <div class="d-flex">
+                                <div class="icons d-flex justify-content-center align-items-center">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="detail-infos">
+                                    <h3>Localisation</h3>
+                                    <p>Abidjan</p>
                                 </div>
                             </div>
                         </div>
@@ -330,18 +333,15 @@
                         <div class="menu">
                             <ul class="d-flex justify-content-center align-items-center">
                                 <li><a href="">ACCUEIL</a></li>
-                                <li><a href="">NOS OFFRES</a></li>
-                                <li><a href="">EVENEMENTS</a></li>
-                                <li><a href="">GALERIE</a></li>
-                                <li><a href="">INSCRIPTION</a></li>
+                                <li><a href="">A PROPOS</a></li>
+                                <li><a href="">NOS SERVICES</a></li>
+                                <li><a href="">TUTORIAL</a></li>
+                                <li><a href="">TEMOIGNAGES</a></li>
+                                <li><a href="">CONTACT</a></li>
                                 
                             </ul>
                         </div>
-                        <div class="socials d-flex justify-content-center align-items-center mb-3">
-                            <div class="social d-flex justify-content-center align-items-center">
-                                <a href=""><i class="fab fa-facebook-f"></i></a>
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
             </div>

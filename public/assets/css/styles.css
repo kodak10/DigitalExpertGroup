@@ -2,6 +2,8 @@
 
 html{scroll-behavior: smooth;}
 
+li{list-style: none;}
+a{text-decoration: none;}
 /*******Header*******/
 header{background: #fff;}
 
@@ -13,24 +15,54 @@ header{background: #fff;}
     align-items: center;
 }
 .banner button{
+    padding: 10px;
     width: 200px;
     padding: 10px;
-    margin: 20px;
+
 }
+.banner button:first-child{
+    background-color: #e4231e;
+    border: 2px solid #e4231e;
+}
+.banner button:first-child:hover{
+    background-color: #fff;
+    border: 2px solid #e4231e;
+}
+
+.banner button:last-child{
+    background-color: #fff;
+    border: 2px solid #0e1532;
+}
+.banner button:last-child:hover{
+    background-color: #0e1532;
+    border: 2px solid #0e1532;
+    color: #fff;
+}
+
 .banner .title h3{font-size: 42px;font-weight: 600;}
 .banner .social{
     display: flex;
 }
 .banner .facebook{
     background: rgb(74, 21, 145);
-    margin-right: 30px;
+    margin-right: 20px;
     height: 50px;
     width: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 50%;
+}
+.banner .facebook:hover{
+    transform: translateY(7px);
+    transition: 0.3s all ease-in-out;
+}
+.banner .instagramme:hover{
+    transform: translateY(7px);
+    transition: 0.3s all ease-in-out;
 }
 .banner .instagramme{
+    border-radius: 50%;
     background: #c12f0e;
     height: 50px;
     width: 50px;
@@ -46,10 +78,24 @@ header{background: #fff;}
 
 
 /******About***/
+.about{
+    min-height: 70vh;
+    display: grid;
+    place-items: center;
+}
 .about h3{
     font-size: 38px;
     font-weight: 600;
 }
+.about button{
+    padding: 15px;
+    border: 1px solid #0e1532;
+    background-color: #0e1532;
+}
+.about button a{
+    color: #fff;
+}
+
 /******Services******/
 .ours_services .icon-box img{
     height: 80px; width: 80px;
@@ -97,4 +143,114 @@ header{background: #fff;}
     font-size: 20px;
     font-weight: 700;
     color: #0e1532;
+}
+
+/*******Tutorial*******/
+.tutorial{
+    margin: 50px auto;
+}
+/********Testimonial******/
+.testimonial .box-carousel{
+    display: grid;
+    place-items: center;
+}
+.testimonial video{
+    height: 400px;
+    width: 100%;
+}
+.testimonial .carousel-indicators{
+    margin-top: 50px;
+}
+.testimonial .carousel-indicators button{
+    background: #0e1532;
+    border-radius: 50%;
+    margin: 20px;
+    border: none;
+    height: 20px;
+    width: 20px;
+}
+.testimonial .carousel-inner{
+    margin-bottom: 100px;
+}
+.testimonial .carousel-item p i{
+    font-size: 50px;
+    color: #6a6a6a2d;
+}
+.testimonial .name{
+    font-size: 18px;
+    font-weight: 600;
+}
+.testimonial .statut{
+    color: gray;
+}
+
+/********Contact us******/
+.contact_us{
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact_us .icons{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: #0e1532;
+    margin-right: 20px;
+}
+.contact_us i{
+    font-size: 20px;
+    color: #fff;
+}
+.contact_us form{
+  margin-left: 30px;
+}
+.contact_us form span{
+    color: red;
+    font-size: 18px;
+}
+
+/*********Footer*******/
+.footer{
+    background: gray;
+}
+.footer .menu{
+    margin: 0px auto;
+}
+.footer .menu ul li{margin: 20px; font-size: 18px;}
+
+.footer a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+}
+.footer .socials .social{
+    background: #fff;
+    height: 40px;
+width: 40px;
+border-radius: 50%;
+}
+.social a i{
+    color: #0e1532;
+}
+
+/********Responsive********/
+@media (max-width:991px) {
+    header{
+        margin-top: 30px;
+    }
+    .navbar{
+        text-align: center;
+    }
+    .navbar-collapse{
+        min-height: 50vh;
+        display: grid;
+        place-items: center;
+    }
+    
+
+    .banner img{
+        width: 100%;
+        margin-bottom: 50px;
+    }
 }
