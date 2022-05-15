@@ -1,0 +1,100 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+
+html{scroll-behavior: smooth;}
+
+/*******Header*******/
+header{background: #fff;}
+
+/******Banner*******/
+.banner{background-color: #fff !important;}
+.banner .about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner button{
+    width: 200px;
+    padding: 10px;
+    margin: 20px;
+}
+.banner .title h3{font-size: 42px;font-weight: 600;}
+.banner .social{
+    display: flex;
+}
+.banner .facebook{
+    background: rgb(74, 21, 145);
+    margin-right: 30px;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner .instagramme{
+    background: #c12f0e;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.instagramme,.facebook i{
+    color: #fff !important;
+    font-size: 22px;
+}
+
+
+
+/******About***/
+.about h3{
+    font-size: 38px;
+    font-weight: 600;
+}
+/******Services******/
+.ours_services .icon-box img{
+    height: 80px; width: 80px;
+}
+.ours_services{
+    display: grid;
+    place-items: center;
+    min-height: 90vh;
+}
+.ours_services .box{
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 20px auto;
+}
+.ours_services .active{
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 5px 0px 20px 0px #b9b9b9;
+}
+.ours_services  .box:hover{
+    box-shadow: 5px 0px 20px 0px #b9b9b9;
+}
+.ours_services .box:hover .icon-box i{
+    color: #dfcc03;
+    transition: 0.3s ease-in-out;
+    transform: rotate(50deg);
+}
+.ours_services .icon-box{margin-top: 10px;}
+.ours_services .icon-box i{
+    font-size: 32px;
+    color: #0e1532;
+}
+.ours_services .text-box{
+    margin: 30px auto;
+}
+.ours_services .text-box span{
+    font-size: 20px;
+    font-weight: 700;
+    color: #0e1532;
+}
