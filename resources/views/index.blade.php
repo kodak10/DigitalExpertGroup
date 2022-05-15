@@ -326,7 +326,7 @@
             </div>
         </section>
 
-        <section class="footer ">
+        <!-- <section class="footer ">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
@@ -346,7 +346,7 @@
                 </div>
             </div>
 
-        </section>
+        </section> -->
 
 
     </div><!-------Wrapper------->

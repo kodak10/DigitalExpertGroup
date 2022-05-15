@@ -253,4 +253,8 @@ border-radius: 50%;
         width: 100%;
         margin-bottom: 50px;
     }
+
+    .contact_us form{
+        margin-left: 0px;
+      }
 }
