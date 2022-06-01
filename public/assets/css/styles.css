@@ -5,10 +5,32 @@ html{scroll-behavior: smooth;}
 li{list-style: none;}
 a{text-decoration: none;}
 /*******Header*******/
-header{background: #fff;}
+header{
+    background: #fff;
+}
+
+.navbar .container{
+    margin: 20px auto;
+}
+.navbar-nav {
+    margin-left: auto;
+}
+.navbar-brand{
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+.nav-item .nav-link{
+    font-size: 18px;
+    margin: 15px;
+}
+.nav-item .active{
+    color: rgb(228, 35, 30) !important;
+    font-weight: bold;
+}
 
 /******Banner*******/
-.banner{background-color: #fff !important;}
+.banner{background-color: #fff !important;min-height: 100vh;}
 .banner .about {
     display: flex;
     justify-content: center;
@@ -77,33 +99,11 @@ header{background: #fff;}
 
 
 
-/******About***/
-.about{
-    min-height: 70vh;
-    display: grid;
-    place-items: center;
-}
-.about h3{
-    font-size: 38px;
-    font-weight: 600;
-}
-.about button{
-    padding: 15px;
-    border: 1px solid #0e1532;
-    background-color: #0e1532;
-}
-.about button a{
-    color: #fff;
-}
-
 /******Services******/
-.ours_services .icon-box img{
-    height: 80px; width: 80px;
-}
 .ours_services{
-    display: grid;
-    place-items: center;
-    min-height: 90vh;
+background: #be3030;
+min-height: 40vh;
+margin-top: -100px;
 }
 .ours_services .box{
     background-color: #f5f5f5;
@@ -113,6 +113,7 @@ header{background: #fff;}
     border-radius: 5px;
     padding: 15px;
     margin: 20px auto;
+    margin-top: -100px;
 }
 .ours_services .active{
     background-color: #f5f5f5;
@@ -125,6 +126,9 @@ header{background: #fff;}
 }
 .ours_services  .box:hover{
     box-shadow: 5px 0px 20px 0px #b9b9b9;
+}
+.ours_services .box:hover .text-box span{
+    color: #dfcc03;
 }
 .ours_services .box:hover .icon-box i{
     color: #dfcc03;
@@ -145,6 +149,68 @@ header{background: #fff;}
     color: #0e1532;
 }
 
+
+/******About***/
+.about{
+    min-height: 70vh;
+    display: grid;
+    place-items: center;
+}
+.about .content{
+    width: 90%;
+    margin: auto;
+}
+.about h3{
+    font-size: 38px;
+    font-weight: 600;
+}
+.about button{
+    padding: 10px;
+    border: 2px solid #be3030;
+}
+.about button a{
+    color: #fff;
+}
+
+/********Dream*******/
+.dream{
+    min-height: 50vh;
+    display: grid;
+    place-items: center;
+}
+.dream .card img{
+    height: 200px;
+}
+.dream .infos .info-name{
+    font-size: 20px;
+font-weight: 700;
+color: bisque;
+
+}
+.dream .infos .info-role{
+
+color: bisque;
+font-size: 18px;
+font-weight: 400;
+}
+.card-body .social{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.social .facebook{
+    background: #0e1532;
+    margin-right: 30px;
+    border-radius: 10px;
+}
+.social .linkedin{
+    background-color: #be3030;
+    border-radius: 10px;
+}
+.social a i{
+    padding: 15px;
+    color: #fff !important;
+}
 /*******Tutorial*******/
 .tutorial{
     margin: 50px auto;
@@ -239,22 +305,77 @@ border-radius: 50%;
     header{
         margin-top: 30px;
     }
-    .navbar{
+
+    .navbar-nav{
+        float: none;
         text-align: center;
+        margin-left: 0;
     }
     .navbar-collapse{
         min-height: 50vh;
         display: grid;
         place-items: center;
     }
-    
+
+    /*****Banner****/
+    .about {
+        min-height: 0;
+        margin: 50px auto;
+    }
+
 
     .banner img{
         width: 100%;
-        margin-bottom: 50px;
+        margin-bottom: 110px;
     }
-
+    /*****About*****/
+    .about img{
+        margin-bottom: 40px;
+    }
+    .about .content {
+        width: 100%;
+      }
+    /******Ours services*****/
+    .ours_services .box{
+        margin-top: 10px;
+    }
     .contact_us form{
         margin-left: 0px;
       }
+}
+
+@media (max-width:499px) {
+    .navbar-brand{
+        font-size: 24px;
+        letter-spacing: 1px;
+    }
+    .boutons button:first-child{
+        margin-bottom: 20px;
+    }
+}
+@media (max-width:415px) {
+    .navbar-brand{
+        font-size: 20px;
+    }
+    .banner .title h3{
+        font-size: 36px;
+    }
+
+}
+@media (max-width:396px) {
+    .navbar-brand{
+        font-size: 18px;
+    }
+    .banner .title h3{
+        font-size: 32px;
+    }
+
+}
+@media (max-width:332px) {
+    .navbar-brand{
+        display: none;
+    }
+    .navbar-toggler{
+        margin-left: auto;
+    }
 }

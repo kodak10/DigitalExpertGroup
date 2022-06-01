@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +9,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css">
 
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css"/>
+
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css"/>
 
 </head>
@@ -17,13 +21,13 @@
 
         <header>
             <nav class="navbar navbar-expand-lg ">
-                <div class="container">
+                <div class="container mt-3">
                     <a class="navbar-brand" href="#">DIGITAL EXPERT GROUP</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                        <ul class="navbar-nav">
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="#">ACCUEIL</a>
                             </li>
@@ -31,84 +35,54 @@
                                 <a class="nav-link" href="#">A PROPOS</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">NOS SERVICES</a>
+                                <a class="nav-link" href="#">TUTORIAL</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">TUTORIAL</a>
-                            </li>  
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">TEMOIGNAGES</a>
-                            </li>  
-                            <li class="nav-item">
                                 <a class="nav-link" href="#">CONTACT</a>
-                            </li>  
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </nav>
         </header>
+
+
         <div class="banner">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-7 about">
-                        <div class="">
                         <div class="title">
-                            <h3>Digital Expert Group</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur alias reprehenderit quos ex? Modi possimus quod iusto laudantium incidunt!</p>
-                            <div class="">
-                                <button class="mb-3">Qui sommes-nous ?</button>
-                                <button class="mb-3">Contactez-nous</button>
+                            <div class="mb-5">
+                                <h3 class="mb-5">Digital Expert Group</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur alias reprehenderit quos ex? Modi possimus quod iusto laudantium incidunt!</p>
                             </div>
-                        </div>
-                        <div class="social">
-                            <div class="facebook mr-3">
-                                <a href=""><i class="fab fa-facebook-f"></i></a>
+                            <div class="boutons">
+                                <button class="">Qui sommes-nous ?</button>
+                                <button class="">Contactez-nous</button>
                             </div>
-                            <div class="instagramme">
-                                <a href=""><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
+
+
                         </div>
                     </div>
+
                     <div class="col-lg-5">
-                        <img src="assets/images/banner.gif" alt="">
+                        <img src="assets/images/banner.gif" alt="" class="w-100">
                     </div>
                 </div>
             </div>
         </div>
 
-        <section class="about ">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-5">
-                        <div class="about-img">
-                            <img class="w-100" src="assets/images/about.webp" alt="" >
-                        </div>
-                    </div>
-                    <div class="col-lg-7">
-                        <h3 class="mb-3">Digital Expert Group</h3>
-                        <div class="about-text">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro quaerat officia repellat minus? Quia itaque alias iste tempora? Asperiores labore consequuntur quidem deleniti? Ad, officiis earum molestias quasi voluptates dolores?
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, corrupti quisquam, quae modi natus numquam voluptates tempore, quia amet eos enim officia et! Omnis accusantium quo vero minus hic facilis.
-                            </p>
-                            <button><a href="">Telecharger la brochure</a></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <section class="ours_services ">
-            
+
             <div class="container">
-            <h3 class="title">Nos services</h3>
+
                 <div class="row">
                     <div class="col-lg-4">
                         <div class="box active text-center">
                             <div class="content-box">
                                <div class="icon-box">
-                               
-                                    <iframe src="https://embed.lottiefiles.com/animation/90896"></iframe>
-                               </div> 
+                                    <span><i class="fas fa-bullhorn"></i></span>
+                               </div>
                                <div class="text-box">
                                    <span>Marketing Digital</span>
                                </div>
@@ -122,8 +96,8 @@
                         <div class="box text-center">
                             <div class="content-box">
                                <div class="icon-box">
-                               <iframe src="https://embed.lottiefiles.com/animation/67017"></iframe>
-                               </div> 
+                                    <span><i class="fas fa-code"></i></span>
+                               </div>
                                <div class="text-box">
                                    <span>Developpement Web et Mobile</span>
                                </div>
@@ -137,8 +111,8 @@
                         <div class="box text-center">
                             <div class="content-box">
                                <div class="icon-box">
-                                    <iframe src="https://embed.lottiefiles.com/animation/68050"></iframe>
-                               </div> 
+                                    <span><i class="fas fa-desktop"></i></span>
+                               </div>
                                <div class="text-box">
                                    <span>Formation Bureautique</span>
                                </div>
@@ -152,9 +126,120 @@
             </div>
         </section>
 
+        <section class="about ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="about-img">
+                            <img class="w-100" src="assets/images/about.webp" alt="" >
+                        </div>
+                    </div>
+                    <div class="col-lg-7 ml-3">
+                        <div class="content">
+                            <h3 class="mb-3">Qui sommes-nous ?</h3>
+                        <div class="about-text">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro quaerat officia repellat minus? Quia itaque alias iste tempora? Asperiores labore consequuntur quidem deleniti? Ad, officiis earum molestias quasi voluptates dolores?
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, corrupti quisquam, quae modi natus numquam voluptates tempore, quia amet eos enim officia et! Omnis accusantium quo vero minus hic facilis.
+                            </p>
+                            <button><a href=""><span><i class="fas fa-download"></i></span> Telecharger la brochure</a></button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="dream">
+            <div class="container">
+                <h3>Notre Equipes</h3>
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="card">
+                            <img src=".." class="card-img-top" alt="...">
+                            <div class="card-body text-center">
+                                <div class="infos">
+                                    <p class="info-name">Kouasi Atchin Parfait</p>
+                                    <p class="info-role">Marketing</p>
+                                </div>
+                                <div class="social">
+                                    <div class="facebook"><a href=""><i class="fab fa-facebook-f"></i></a></div>
+                                    <div class="linkedin"><a href=""><i class="fab fa-linkedin-in"></i></a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <img src=".." class="card-img-top" alt="...">
+                            <div class="card-body text-center">
+                                <div class="infos">
+                                    <p class="info-name">Kouasi Atchin Parfait</p>
+                                    <p class="info-role">Developpeur</p>
+                                </div>
+                                <div class="social">
+                                    <div class="facebook"><a href=""><i class="fab fa-facebook-f"></i></a></div>
+                                    <div class="linkedin"><a href=""><i class="fab fa-linkedin-in"></i></a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="card">
+                            <img src=".." class="card-img-top" alt="...">
+                            <div class="card-body text-center">
+                                <div class="infos">
+                                    <p class="info-name">Kouasi Atchin Parfait</p>
+                                    <p class="info-role">Autres</p>
+                                </div>
+                                <div class="social">
+                                    <div class="facebook"><a href=""><i class="fab fa-facebook-f"></i></a></div>
+                                    <div class="linkedin"><a href=""><i class="fab fa-linkedin-in"></i></a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="card">
+                            <img src=".." class="card-img-top" alt="...">
+                            <div class="card-body text-center">
+                                <div class="infos">
+                                    <p class="info-name">Kouasi Atchin Parfait</p>
+                                    <p class="info-role">Autres</p>
+                                </div>
+                                <div class="social">
+                                    <div class="facebook"><a href=""><i class="fab fa-facebook-f"></i></a></div>
+                                    <div class="linkedin"><a href=""><i class="fab fa-linkedin-in"></i></a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="card">
+                            <img src=".." class="card-img-top" alt="...">
+                            <div class="card-body text-center">
+                                <div class="infos">
+                                    <p class="info-name">Kouasi Atchin Parfait</p>
+                                    <p class="info-role">Kouasi Atchin Parfait</p>
+                                </div>
+                                <div class="social">
+                                    <div class="facebook"><a href=""><i class="fab fa-facebook-f"></i></a></div>
+                                    <div class="linkedin"><a href=""><i class="fab fa-linkedin-in"></i></a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
         <section class="tutorial">
             <div class="container">
-            <h3 class="title">Tutorials</h3>
+            <a href=""><h3 class="title">Conseils / Tutorials <span><i class="fas fa-angle-double-right"></i></span></h3></a>
                 <div class="row">
                     <div class="col-lg-4">
                         <div class="card mb-3" style="max-width: 540px;">
@@ -301,7 +386,7 @@
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="mb-3">
-                                        <label for="" class="form-label">Motif <span>*</span></label>
+                                        <label for="" class="form-label">Numéro de Téléphone <span>*</span></label>
                                         <input type="text" class="form-control">
                                     </div>
                                 </div>
@@ -338,10 +423,10 @@
                                 <li><a href="">TUTORIAL</a></li>
                                 <li><a href="">TEMOIGNAGES</a></li>
                                 <li><a href="">CONTACT</a></li>
-                                
+
                             </ul>
                         </div>
-                        
+
                     </div>
                 </div>
             </div>
@@ -351,8 +436,12 @@
 
     </div><!-------Wrapper------->
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+
+    <script src="assets/js/jquery.js" ></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+
+   <script src="assets/js/app.js"></script>
 </body>
 </html>
